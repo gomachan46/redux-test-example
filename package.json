@@ -15,9 +15,15 @@
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
     "espower-babel": "^4.0.1",
+    "karma": "^0.13.21",
+    "karma-browserify": "^5.0.1",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-mocha": "^0.2.1",
+    "karma-mocha-reporter": "^1.1.5",
     "mocha": "^2.4.5",
     "power-assert": "^1.2.0",
-    "redux-devtools": "^3.1.1"
+    "redux-devtools": "^3.1.1",
+    "watchify": "^3.7.0"
   },
   "author": "",
   "license": "ISC"
