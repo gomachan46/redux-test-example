@@ -1,6 +1,10 @@
+NPM_BIN=./node_modules/.bin
+BROWSERIFY=${NPM_BIN}/browserify
+MOCHA=${NPM_BIN}/mocha
+
 install:
 	npm install
 build:
-	browserify ./index.js -t [ babelify --presets [ es2015 react ] ] -o ./bundle.js
-test:
-	mocha --compilers js:espower-babel/guess test/**/*.spec.js
+	${BROWSERIFY} ./index.js -t babelify -o ./bundle.js
+tests:
+	${MOCHA} --compilers js:espower-babel/guess test/**/*.spec.js
