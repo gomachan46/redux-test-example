@@ -1,4 +1,5 @@
 NPM_BIN=./node_modules/.bin
+PORT=3000
 
 install:
 	npm install
